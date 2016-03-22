@@ -544,7 +544,7 @@
     NSString *str = [NSString stringWithFormat:@"%@",saveImagePath];
     NSDictionary *dic = @{@"savePath":str};
     NSString *jsonStr = [dic JSONFragment];
-    NSString *jsString = [NSString stringWithFormat:@"uexHandwriting.cbSave('%@');",jsonStr];
+    NSString *jsString = [NSString stringWithFormat:@"uexScrawl.cbSave('%@');",jsonStr];
     [EUtility brwView:self.meBrwView evaluateScript:jsString];
     
 }
@@ -611,7 +611,7 @@
     NSString *tempPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/apps"];
     NSString *wgtTempPath=[tempPath stringByAppendingPathComponent:[EUtility brwViewWidgetId:self.meBrwView]];
     
-    return [wgtTempPath stringByAppendingPathComponent:@"uexHandwriting"];
+    return [wgtTempPath stringByAppendingPathComponent:@"uexScrawl"];
 }
 - (NSString *)saveImage:(UIImage *)image quality:(CGFloat)quality usePng:(BOOL)usePng{
     NSData *imageData;
