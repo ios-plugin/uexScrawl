@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09386F311C9A77A20073B88E /* EUExScrawl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 09386F301C9A77A20073B88E /* EUExScrawl.h */; };
 		09386F331C9A77A20073B88E /* EUExScrawl.m in Sources */ = {isa = PBXBuildFile; fileRef = 09386F321C9A77A20073B88E /* EUExScrawl.m */; };
 		09FAC4AA1C9A7EE400B4B903 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC4891C9A7EE400B4B903 /* MASCompositeConstraint.m */; };
 		09FAC4AB1C9A7EE400B4B903 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC48C1C9A7EE400B4B903 /* MASConstraint.m */; };
@@ -29,10 +28,9 @@
 		09386F2B1C9A77A20073B88E /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
+			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
-				09386F311C9A77A20073B88E /* EUExScrawl.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
