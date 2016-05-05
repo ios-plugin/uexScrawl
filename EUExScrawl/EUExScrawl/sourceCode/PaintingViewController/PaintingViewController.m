@@ -546,7 +546,7 @@
     NSString *jsonStr = [dic JSONFragment];
     NSString *jsString = [NSString stringWithFormat:@"uexScrawl.cbSave('%@');",jsonStr];
     [EUtility brwView:self.meBrwView evaluateScript:jsString];
-    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(CGSize)OriginImage:(UIImage *)image Width:(CGFloat)drawWidth Height:(CGFloat)drawHeight {
     CGFloat width = image.size.width;

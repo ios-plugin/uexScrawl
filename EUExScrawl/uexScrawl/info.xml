@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <uexplugins>
     <plugin
-        uexName="uexScrawl" version="3.0.0" build="0">
-        <info>0:涂鸦插件</info>
+        uexName="uexScrawl" version="3.0.1" build="1">
+        <info>1:修复点击保存按钮无法关闭窗口的问题</info>
+        <build>0:涂鸦插件</build>
     </plugin>
 </uexplugins>
