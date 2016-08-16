@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "EUExBase.h"
+#import <AppCanKit/AppCanKit.h>
 @interface EUExScrawl : EUExBase
-@property(nonatomic,retain) NSMutableDictionary *jsonDict;
+//@property(nonatomic,retain) NSMutableDictionary *jsonDict;
 @end

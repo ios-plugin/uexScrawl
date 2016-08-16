@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "EUExBase.h"
+#import <AppCanKit/AppCanKit.h>
 @interface PaintingViewController : UIViewController
 @property (strong, nonatomic)  UIImage *backGroundImage;
-@property(strong,nonatomic) EBrowserView *meBrwView;
+@property (nonatomic, weak) id<AppCanWebViewEngineObject> webViewEngine;
+@property (nonatomic, strong) ACJSFunctionRef *func;
 @end

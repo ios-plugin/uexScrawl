@@ -11,7 +11,7 @@
 #import <Masonry/Masonry.h>
 #import "EUtility.h"
 #import "MyView.h"
-#import "JSON.h"
+
 
 #define BOTTOWVIEW_HEIGHT 40.0f
 #define SETTINGVIEW_HEIGHT 50.0f
@@ -542,10 +542,18 @@
     UIImage *image = [self overlay:bottomImage andImage:frontImage];
     NSString *saveImagePath = [self saveImage:image quality:1.0 usePng:YES];
     NSString *str = [NSString stringWithFormat:@"%@",saveImagePath];
+    NSNumber *state = @1;
+    if (str) {
+        state = @0;
+    }
+    NSLog(@"str:%@",str);
     NSDictionary *dic = @{@"savePath":str};
-    NSString *jsonStr = [dic JSONFragment];
-    NSString *jsString = [NSString stringWithFormat:@"uexScrawl.cbSave('%@');",jsonStr];
-    [EUtility brwView:self.meBrwView evaluateScript:jsString];
+    NSString *jsonStr = [dic ac_JSONFragment];
+    //NSString *jsString = [NSString stringWithFormat:@"%@",jsonStr];
+    //[EUtility brwView:self.meBrwView evaluateScript:jsString];
+    [self.webViewEngine callbackWithFunctionKeyPath:@"uexScrawl.cbSave" arguments:ACArgsPack(jsonStr)];
+    [self.func executeWithArguments:ACArgsPack(state,str)];
+    self.func = nil;
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 -(CGSize)OriginImage:(UIImage *)image Width:(CGFloat)drawWidth Height:(CGFloat)drawHeight {
@@ -609,7 +617,7 @@
 // save to disc
 - (NSString *)getSaveDirPath{
     NSString *tempPath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/apps"];
-    NSString *wgtTempPath=[tempPath stringByAppendingPathComponent:[EUtility brwViewWidgetId:self.meBrwView]];
+    NSString *wgtTempPath=[tempPath stringByAppendingPathComponent:[self.webViewEngine.widget widgetId]];//[EUtility brwViewWidgetId:self.meBrwView]];
     
     return [wgtTempPath stringByAppendingPathComponent:@"uexScrawl"];
 }

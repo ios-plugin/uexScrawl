@@ -8,31 +8,30 @@
 
 #import "EUExScrawl.h"
 #import "EUtility.h"
-#import "JSON.h"
 #import "PaintingViewController.h"
 @implementation EUExScrawl
--(id)initWithBrwView:(EBrowserView *) eInBrwView {
-    if (self = [super initWithBrwView:eInBrwView]) {
-        
-    }
-    return self;
-}
+//-(id)initWithBrwView:(EBrowserView *) eInBrwView {
+//    if (self = [super initWithBrwView:eInBrwView]) {
+//        
+//    }
+//    return self;
+//}
 -(void)open:(NSMutableArray *)inArguments{
-    NSString *jsonStr = nil;
-    if (inArguments.count > 0) {
-        jsonStr = [inArguments objectAtIndex:0];
-        self.jsonDict = [jsonStr JSONValue];//将JSON类型的字符串转化为可变字典
-        
-    }else{
+    if (inArguments.count < 1) {
         return;
     }
-    NSString *imagePath = [self.jsonDict objectForKey:@"src"];
-    imagePath = [EUtility getAbsPath:meBrwView path:imagePath];
+    ACArgsUnpack(NSDictionary *jsonDict) = inArguments;
+    ACJSFunctionRef *func = ac_JSFunctionArg(inArguments.lastObject);
+    NSString *imagePath = [jsonDict objectForKey:@"src"];
+    //imagePath = [EUtility getAbsPath:meBrwView path:imagePath];
+    imagePath = [self absPath:imagePath];
     UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
     PaintingViewController *paintingVC = [[PaintingViewController alloc]init];
-    paintingVC.meBrwView = meBrwView;
+    paintingVC.webViewEngine = self.webViewEngine;
     paintingVC.backGroundImage = image;
-    [EUtility brwView:meBrwView presentModalViewController:paintingVC animated:YES];
+    paintingVC.func = func;
+    //[EUtility brwView:meBrwView presentModalViewController:paintingVC animated:YES];
+    [[self.webViewEngine viewController] presentViewController:paintingVC animated:YES completion:nil];
     
 }
 

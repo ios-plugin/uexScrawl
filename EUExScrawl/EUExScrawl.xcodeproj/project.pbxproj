@@ -14,6 +14,7 @@
 		09FAC4B51C9A7EE400B4B903 /* HVWBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC4A51C9A7EE400B4B903 /* HVWBezierPath.m */; };
 		09FAC4B61C9A7EE400B4B903 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC4A71C9A7EE400B4B903 /* MyView.m */; };
 		09FAC4B71C9A7EE400B4B903 /* PaintingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09FAC4A91C9A7EE400B4B903 /* PaintingViewController.m */; };
+		21F384531D62A306008A31E6 /* AppCanKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21F384521D62A306008A31E6 /* AppCanKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,15 +35,6 @@
 		09386F301C9A77A20073B88E /* EUExScrawl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EUExScrawl.h; sourceTree = "<group>"; };
 		09386F321C9A77A20073B88E /* EUExScrawl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EUExScrawl.m; sourceTree = "<group>"; };
 		093C846F1CEF1FAD00BF4F1F /* Masonry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Masonry.framework; sourceTree = "<group>"; };
-		09FAC47E1C9A7EE400B4B903 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
-		09FAC47F1C9A7EE400B4B903 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONParser.h; sourceTree = "<group>"; };
-		09FAC4801C9A7EE400B4B903 /* MD5Digest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MD5Digest.h; sourceTree = "<group>"; };
-		09FAC4811C9A7EE400B4B903 /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
-		09FAC4821C9A7EE400B4B903 /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
-		09FAC4831C9A7EE400B4B903 /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
-		09FAC4841C9A7EE400B4B903 /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
-		09FAC4851C9A7EE400B4B903 /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
-		09FAC4861C9A7EE400B4B903 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		09FAC4A21C9A7EE400B4B903 /* DrawerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DrawerView.h; sourceTree = "<group>"; };
 		09FAC4A31C9A7EE400B4B903 /* DrawerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DrawerView.m; sourceTree = "<group>"; };
 		09FAC4A41C9A7EE400B4B903 /* HVWBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HVWBezierPath.h; sourceTree = "<group>"; };
@@ -51,9 +43,9 @@
 		09FAC4A71C9A7EE400B4B903 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		09FAC4A81C9A7EE400B4B903 /* PaintingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaintingViewController.h; sourceTree = "<group>"; };
 		09FAC4A91C9A7EE400B4B903 /* PaintingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaintingViewController.m; sourceTree = "<group>"; };
-		09FAC4B91C9A7F7B00B4B903 /* EUExBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBase.h; sourceTree = "<group>"; };
 		09FAC4BA1C9A7F7B00B4B903 /* EUExBaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUExBaseDefine.h; sourceTree = "<group>"; };
 		09FAC4BB1C9A7F7B00B4B903 /* EUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EUtility.h; sourceTree = "<group>"; };
+		21F384521D62A306008A31E6 /* AppCanKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCanKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21F384531D62A306008A31E6 /* AppCanKit.framework in Frameworks */,
 				093C84701CEF1FAD00BF4F1F /* Masonry.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -98,28 +91,12 @@
 		09FAC47C1C9A7EE400B4B903 /* sourceCode */ = {
 			isa = PBXGroup;
 			children = (
+				21F384521D62A306008A31E6 /* AppCanKit.framework */,
 				093C846F1CEF1FAD00BF4F1F /* Masonry.framework */,
-				09FAC47D1C9A7EE400B4B903 /* JSON */,
 				09FAC4A11C9A7EE400B4B903 /* PaintingViewController */,
 			);
 			name = sourceCode;
 			path = EUExScrawl/sourceCode;
-			sourceTree = "<group>";
-		};
-		09FAC47D1C9A7EE400B4B903 /* JSON */ = {
-			isa = PBXGroup;
-			children = (
-				09FAC47E1C9A7EE400B4B903 /* JSON.h */,
-				09FAC47F1C9A7EE400B4B903 /* JSONParser.h */,
-				09FAC4801C9A7EE400B4B903 /* MD5Digest.h */,
-				09FAC4811C9A7EE400B4B903 /* NSObject+SBJSON.h */,
-				09FAC4821C9A7EE400B4B903 /* NSString+SBJSON.h */,
-				09FAC4831C9A7EE400B4B903 /* SBJSON.h */,
-				09FAC4841C9A7EE400B4B903 /* SBJsonBase.h */,
-				09FAC4851C9A7EE400B4B903 /* SBJsonParser.h */,
-				09FAC4861C9A7EE400B4B903 /* SBJsonWriter.h */,
-			);
-			path = JSON;
 			sourceTree = "<group>";
 		};
 		09FAC4A11C9A7EE400B4B903 /* PaintingViewController */ = {
@@ -140,7 +117,6 @@
 		09FAC4B81C9A7F7B00B4B903 /* engineHeader */ = {
 			isa = PBXGroup;
 			children = (
-				09FAC4B91C9A7F7B00B4B903 /* EUExBase.h */,
 				09FAC4BA1C9A7F7B00B4B903 /* EUExBaseDefine.h */,
 				09FAC4BB1C9A7F7B00B4B903 /* EUtility.h */,
 			);
